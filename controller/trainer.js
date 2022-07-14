@@ -1,9 +1,9 @@
 const userRoutetr = (app, fs) => {
 
-    // variables
+    
     const dataPath = './model/trainer.json';
 
-    // helper methods
+    
     const readFile = (callback, returnJson = false, filePath = dataPath, encoding = 'utf8') => {
         fs.readFile(filePath, encoding, (err, data) => {
             if (err) {
@@ -25,7 +25,7 @@ const userRoutetr = (app, fs) => {
         });
     };
 
-    // READ
+   
     app.get('/trainer', (req, res) => {
         fs.readFile(dataPath, 'utf8', (err, data) => {
             if (err) {
@@ -37,11 +37,11 @@ const userRoutetr = (app, fs) => {
     });
 
 
-    // app.get('/staff/:id', (req, res) => {
+    // app.get('/trainer/:id', (req, res) => {
 
     //     readFile(data => {
 
-    //         // add the new user
+    //       
     //         const userId = req.params["id"];
     //         const foundUser = trainees.find((trainees) => user.id == id);
     //         writeFile(JSON.stringify(data, null, 2), () => {
@@ -52,15 +52,14 @@ const userRoutetr = (app, fs) => {
     //         true);
     // });
 
-    // CREATE
+    
     app.post('/trainer', (req, res) => {
 
         readFile(data => {
-            // Note: this isn't ideal for production use. 
-            // ideally, use something like a UUID or other GUID for a unique ID value
+           
             const newUserId = Date.now().toString();
 
-            // add the new user
+            
             data[newUserId.toString()] = req.body;
 
             writeFile(JSON.stringify(data, null, 2), () => {
@@ -71,12 +70,12 @@ const userRoutetr = (app, fs) => {
     });
 
 
-    // UPDATE
+    
     app.patch('/trainer/:id', (req, res) => {
 
         readFile(data => {
 
-            // add the new user
+           
             const userId = req.params["id"];
             data[userId] = req.body;
 
@@ -88,12 +87,12 @@ const userRoutetr = (app, fs) => {
     });
 
 
-    // DELETE
+   
     app.delete('/trainer/:id', (req, res) => {
 
         readFile(data => {
 
-            // delete the user
+           
             const userId = req.params["id"];
             delete data[userId];
 
