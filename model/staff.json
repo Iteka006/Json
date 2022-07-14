@@ -1,0 +1,42 @@
+{
+  "1": {
+    "FistName": "John",
+    "LastName": "Paul",
+    "password": "password1",
+    "Position": "Secretary",
+    "id": 1,
+    "gender": "Male"
+  },
+  "2": {
+    "FistName": "Bruce",
+    "LastName": "Van",
+    "password": "password2",
+    "Position": "Secretary",
+    "id": 2,
+    "gender": "Male"
+  },
+  "3": {
+    "FistName": "Teresa",
+    "LastName": "May",
+    "password": "password3",
+    "Position": "Accountant",
+    "id": 3,
+    "gender": "Female"
+  },
+  "4": {
+    "FistName": "Lyse",
+    "LastName": "Van",
+    "password": "password4",
+    "Position": "Manager",
+    "id": 4,
+    "gender": "Female"
+  },
+  "10": {
+    "FistName": "Mauron",
+    "LastName": "Port",
+    "password": "password5",
+    "Position": "Driver",
+    "id": 5,
+    "gender": "Male"
+  }
+}

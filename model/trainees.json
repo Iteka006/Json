@@ -1,0 +1,38 @@
+{
+    "1": {
+      "FirstName": "Joyce",
+      "LastName": "Mauron",
+      "password": "password11",
+      "Language": "Django",
+      "gender": "Female"
+      
+    },
+    "2": {
+      "FirstName": "Guy",
+      "LastName": "William",
+      "password": "password12",
+      "Language": "UI",
+      "gender": "Male"
+    },
+    "3": {
+      "FirstName": "Nancy",
+      "LastName": "Wayne",
+      "password": "password13",
+      "Language": "Laravel",
+      "gender": "Female"
+    },
+    "4": {
+      "FirstName": "Muco",
+      "LastName": "Jack",
+      "password": "password14",
+      "Language": "Javascript",
+      "gender": "Male"
+    },
+    "10": {
+      "FirstName": "Joseph",
+      "LastName": "Ishimwe",
+      "password": "password15",
+      "Language": "React",
+      "gender": "Male"
+    }
+  }
